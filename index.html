@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="https://pagecrypt.maxlaumeister.com/" />
+    <link rel="canonical" href="https://pagecrypt.lupine.dev/" />
     <title>PageCrypt - Password Protect HTML</title>
     <meta name="description" content="This tool lets you securely password-protect an HTML file without using .htaccess. It uses strong encryption, so the password-protection cannot be bypassed. Choose an HTML file and a password, and your page will be password-protected!">
     <style>
@@ -117,12 +117,12 @@
   <body>
     <div id="pageContainer">
         <div class="linkBack">
-            <a class="linkBack" href="https://www.maxlaumeister.com/">&lt;- home</a>
+            <a class="linkBack" href="https://lupine.dev/">&lt;- home</a>
         </div>
         <div id="mainContainer">
             <div id="sectionTop">
                 <div id="projDescription">
-                    <a class="githubLink" href="https://github.com/MaxLaumeister/pagecrypt"><img class="githubLogo" src="github.svg" alt="GitHub Logo"></a>
+                    <a class="githubLink" href="https://github.com/lupine-dev/pagecrypt"><img class="githubLogo" src="github.svg" alt="GitHub Logo"></a>
                     <h1>PageCrypt - Password Protect HTML</h1>
                     <p>This tool lets you securely password-protect an HTML file. Unlike other password-protection tools, this tool:</p>
                     <ol>
@@ -147,7 +147,7 @@
                     <p id="passMismatch">Passwords don't match, try again.</p>
                     <p class="steps">Step 3. Protect!</p><p><button id="submitFile" type="button" disabled>Submit</button></p>
                     <p id="doneProtecting">Done! Check your downloads!</p>
-                    <p class="steps">Step 4. Tip me?</p><p><a href="https://www.maxlaumeister.com/tip/" class="demoButton">Donate!</a></p>
+                    <p class="steps">Step 4. Tip me?</p><p><a href="https://lupine.dev/tip/" class="demoButton">Donate!</a></p>
                     <p class="suggested">Suggested donation is <strong>$5</strong> for personal use, or <strong>$10-20</strong> for businesses. Honor system!</p>
                 </div>
             </div>
@@ -160,7 +160,7 @@
                 <h3>How can this be secure if it's client-side? Can't people just bypass the password?</h3>
                 <p>The HTML gets encrypted using the password, so it is unreadable without the password. An attacker could extract the encrypted document, but it would be an unusable mess until they decrypt it, which can only be done with the original password.</p>
                 <h3>How do I know you're not keeping track of passwords I enter into this tool?</h3>
-                <p>View the source code for this tool (in your browser and/or <a href="https://github.com/MaxLaumeister/pagecrypt">on GitHub</a>) and you can see for yourself that the password never leaves your computer!</p>
+                <p>View the source code for this tool (in your browser and/or <a href="https://github.com/lupine-dev/pagecrypt">on GitHub</a>) and you can see for yourself that the password never leaves your computer!</p>
                 <h3>Why would I want to use this instead of a .htaccess user/password prompt?</h3>
                 <p>Standard user/password prompts require you have some sort of privileged access to the server. With Apache for instance, you need to be able to add a .htaccess file to the directory you want to protect. Since this tool produces a standard HTML file, you can host it literally anywhere, even places that don't give you access to the server configuration.</p>
                 <p>This means you can use this tool to password-protect files without using .htaccess!</p>
@@ -172,13 +172,13 @@
                 <p>This tool uses the <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto">SubtleCrypto</a> JavaScript API for its encryption. First, an encryption key is derived from the password using PBKDF2 and a random salt with 100,000 rounds. Then the HTML is encrypted using AES256.</p>
                 <h3>Is there a way to automate this or use it as a software library?</h3>
                 <p>See <a href="https://github.com/Greenheart/pagecrypt">Samuel Plumppu's rewrite of PageCrypt</a>, which includes CLI and NPM automation, and NodeJS API support.</p>
-                <p>In addition, thanks to <a href="https://zoltan.xyz/">Zoltán Gálli</a> for <a href="https://github.com/MaxLaumeister/pagecrypt/tree/master/python">this tool's <strong>Python</strong> CLI</a>, and thanks to <a href="https://nialfrancis.tech/">Nial Francis</a> for <a href="https://github.com/MaxLaumeister/pagecrypt/tree/master/PowerShell">this tool's <strong>PowerShell</strong> CLI</a>. <a href="https://github.com/MaxLaumeister/pagecrypt/tree/master/CONTRIBUTING.md">Contributions welcome!</a></p>
+                <p>In addition, thanks to <a href="https://zoltan.xyz/">Zoltán Gálli</a> for <a href="https://github.com/lupine-dev/pagecrypt/tree/master/python">this tool's <strong>Python</strong> CLI</a>, and thanks to <a href="https://nialfrancis.tech/">Nial Francis</a> for <a href="https://github.com/lupine-dev/pagecrypt/tree/master/PowerShell">this tool's <strong>PowerShell</strong> CLI</a>. <a href="https://github.com/lupine-dev/pagecrypt/tree/master/CONTRIBUTING.md">Contributions welcome!</a></p>
                 <p>Finally, see <a href="https://github.com/brentscott93/pagecryptr">Brent Scott's <strong>R-wrapper</strong> for PageCrypt</a>. From the project page: "It is very common for R users to knit Rmarkdown documents to HTML docs. This provides an easy way to PageCrypt those documents without leaving R."</p>
             </div>
             <hr>
             <div id="moreInfo">
                 <h2>More Info</h2>
-                <p>Project by <a href="https://www.maxlaumeister.com/">Maximillian Laumeister</a>. The source code and license are available <a href="https://github.com/MaxLaumeister/pagecrypt">on GitHub</a>.
+                <p>Project by <a href="https://lupine.dev/">Wolfy</a>. The source code and license are available <a href="https://github.com/lupine-dev/pagecrypt">on GitHub</a>.
             </div>
         </div>
         <div id="disclaimer">
